@@ -3,17 +3,19 @@ package prover.test
 import prover.expr._
 import prover.core._
 import java.util.Date
-import scala.collection.mutable.Map
+
 object CoreTest extends App {
     val (p, q, r) = (Atom("p"), Atom("q"), Atom("r"))
-    Eval.init()
     var start_time = new Date().getTime
 
     import prover.core.|-._
+
     |-.print_proof = true
+    |-.print_length = 100
 
     // 基本结论（不含否定）
     |- (p -> p)
+    throw ExprError("")
     List(p) |- (q -> p)
     List(q -> r) |- ((p -> q) -> (p -> r))
     List(p -> r) |- (p -> (q -> r))

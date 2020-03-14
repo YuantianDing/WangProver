@@ -73,6 +73,7 @@ object Prover {
 object |- {
     // whether use |- to print proof
     var print_proof = false
+    var print_length = 50
     implicit class Snippets(L : List[Expr]) {
         def |-(e : Expr) = {
             println(s"[info] prove for $e with assumption $L")
@@ -86,7 +87,7 @@ object |- {
 
             if(ret.isDefined){
                 println(s"[info] the length of the proof of $e : ${ret.get.length}")
-                if(print_proof) Proof(ret).show()
+                if(print_proof) Proof(ret).show(print_length)
             } else {
                 println("[info] expression are wrong")
             }
