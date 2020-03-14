@@ -38,7 +38,7 @@ object CoreTest extends App {
     |- (~q -> (q -> p))
     List(~p -> p) |- p
     |- ((~p -> p) -> p)
-    List(!p) |- p
+    List(!p) |- p // !p 为 ¬¬p 的简写 (Scala 语法限制)
     |- (!p -> p)
     List(p) |- !p
     |- (p -> !p)
