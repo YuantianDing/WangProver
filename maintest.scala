@@ -15,7 +15,6 @@ object CoreTest extends App {
 
     // 基本结论（不含否定）
     |- (p -> p)
-    throw ExprError("")
     List(p) |- (q -> p)
     List(q -> r) |- ((p -> q) -> (p -> r))
     List(p -> r) |- (p -> (q -> r))
