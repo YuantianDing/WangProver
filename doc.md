@@ -126,3 +126,7 @@ object MyTest extends App {
 Scala对函数式支持比较友好，不像某人生苦短语言（有 coconut 也还能用，可以尝试），Scala写一些模式匹配会方便一些。
 
 不过，非常惭愧，由于一开始不是特别了解 Scala，很多函数式特性我的代码中并没有用好（函数式不是很熟也式我用Scala的原因）。
+
+### 测试结果
+
+完整的 `maintest.scala` 的测试结果见 `test_results.pdf`
