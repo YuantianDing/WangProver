@@ -1,4 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 # WangProver 证明器程序原理说明
 
@@ -23,7 +22,7 @@ $$
 
 证明 $p \rightarrow p$ ：
 
-<img src="/Users/dnailz/Course/MathematicalLogic/prover/doc.assets/IMG_1002AFDBE04B-1.jpeg" alt="IMG_1002AFDBE04B-1" style="zoom:50%;" />
+![](./doc.assets/1.jpeg)
 
 1. 首先，$p \rightarrow p$ 显然不是$L1$ $L2$ $L3$ 中的公式，故它一定是$MP$ 得来的。
 
@@ -59,7 +58,7 @@ $$
 
 从这里我们可以看到，其实 Resolution 方法非常符合人的证明习惯，如果是我的话，我可能会想着这样证明：
 
-<img src="/Users/dnailz/Course/MathematicalLogic/prover/doc.assets/image-20200514142427312.png" alt="image-20200514142427312" style="zoom:33%;" />
+![](./doc.assets/2.png)
 
 自行观察就会发现，Resolution方法与人对这种定理的证明非常相似。
 
